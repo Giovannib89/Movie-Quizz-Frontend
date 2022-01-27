@@ -57,7 +57,7 @@ module.exports = merge(common, {
       directory: paths.build,
     },
     historyApiFallback: true,
-    open: false,
+    open: true,
     compress: true,
     hot: true,
     port,

@@ -1,0 +1,19 @@
+@use 'src/styles/vars' as v;
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: v.$gutter;
+  background-color: v.$primary-color;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__divText{
+    padding: v.$gutter;
+    &__text{
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.play{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  
+  &__button{
+    font-size: 3em;
+  }
+}

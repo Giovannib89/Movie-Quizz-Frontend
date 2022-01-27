@@ -1,0 +1,31 @@
+@use 'src/styles/vars' as v;
+
+.header {  
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: v.$primary-color;
+  padding: v.$gutter*0.5;
+  display: grid;
+  grid-template-columns: 0.5fr 3.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "movie-quizz logo connexion inscription menu";
+  &__logo{
+    position: absolute;
+    left: 50%;
+    top: 0.2em;
+    font-size: 1.5em;
+  }
+}
+
+.movie-quizz { grid-area: movie-quizz; }
+
+.connexion { grid-area: connexion; }
+
+.inscription { grid-area: inscription; }
+
+.menu { grid-area: menu; }
